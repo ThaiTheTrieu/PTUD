@@ -10,17 +10,23 @@ public class MainFrame extends javax.swing.JFrame {
             if(index == 1&& subintex ==1){
                 tbdMenu.setSelectedIndex(0);
             }
-            if(index == 4 && subintex == 1){
-                tbdMenu.setSelectedIndex(2);
-            }
-            if(index == 2 && subintex == 1){
+            if(index == 1 && subintex == 2){
                 tbdMenu.setSelectedIndex(1);
             }
-            if(index == 1 && subintex == 2){
-                tbdMenu.setSelectedIndex(3);
+            if(index == 2 && subintex == 1){
+                tbdMenu.setSelectedIndex(2);
             }
             if(index == 2 && subintex == 2){
+                tbdMenu.setSelectedIndex(3);
+            }
+            if(index == 4 && subintex == 1){
                 tbdMenu.setSelectedIndex(4);
+            }
+            if(index == 3 && subintex == 1){
+                tbdMenu.setSelectedIndex(5);
+            }
+            if(index == 3 && subintex == 2){
+                tbdMenu.setSelectedIndex(6);
             }
         });
         setResizable(false);
@@ -39,10 +45,12 @@ public class MainFrame extends javax.swing.JFrame {
         pnlMenu = new ui.Menu();
         tbdMenu = new javax.swing.JTabbedPane();
         employeeUI2 = new ui.EmployeeUI();
-        congNhanUI1 = new ui.CongNhanUI();
-        departmentUI1 = new ui.DepartmentUI();
         timKiemNhanVien1 = new ui.TimKiemNhanVien();
+        congNhanUI1 = new ui.CongNhanUI();
         timKiemCongNhan1 = new ui.TimKiemCongNhan();
+        departmentUI1 = new ui.DepartmentUI();
+        sanPhamUI1 = new ui.SanPhamUI();
+        timKiemSanPham1 = new ui.TimKiemSanPham();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -53,10 +61,12 @@ public class MainFrame extends javax.swing.JFrame {
 
         employeeUI2.setPreferredSize(new java.awt.Dimension(1000, 699));
         tbdMenu.addTab("tab3", employeeUI2);
-        tbdMenu.addTab("tab2", congNhanUI1);
-        tbdMenu.addTab("tab3", departmentUI1);
         tbdMenu.addTab("tab4", timKiemNhanVien1);
+        tbdMenu.addTab("tab2", congNhanUI1);
         tbdMenu.addTab("tab5", timKiemCongNhan1);
+        tbdMenu.addTab("tab3", departmentUI1);
+        tbdMenu.addTab("tab6", sanPhamUI1);
+        tbdMenu.addTab("tab7", timKiemSanPham1);
 
         getContentPane().add(tbdMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, -30, 1080, 730));
 
@@ -102,9 +112,11 @@ public class MainFrame extends javax.swing.JFrame {
     private ui.DepartmentUI departmentUI1;
     private ui.EmployeeUI employeeUI2;
     private ui.Menu pnlMenu;
+    private ui.SanPhamUI sanPhamUI1;
     private scrollpanel.ScrollPaneWin11 scroll;
     private javax.swing.JTabbedPane tbdMenu;
     private ui.TimKiemCongNhan timKiemCongNhan1;
     private ui.TimKiemNhanVien timKiemNhanVien1;
+    private ui.TimKiemSanPham timKiemSanPham1;
     // End of variables declaration//GEN-END:variables
 }

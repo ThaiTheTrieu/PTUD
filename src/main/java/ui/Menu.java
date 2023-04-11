@@ -19,11 +19,11 @@ public class Menu extends JComponent {
     private MigLayout layout;
     private final String[][] menuItems = new String[][]{
         {"Menu"},
-        {"Nhân viên", "Danh sách nhân viên", "Tìm kiếm","Quản lý lương"},
-        {"Công nhân", "Danh sách công nhân", "Tìm kiếm" ,"Phân công", "quản lý lương"},
-        {"Sản phẩm", "Danh sách sản phẩm", "Tìm kiếm" ,"Thêm sản phẩm", "Quản lý công đoạn"},
-        {"Phòng Ban", "danh sách phòng ban", "Tìm kiếm"},
-        {"bảng lương", "Công nhân", "Nhân viên", "Thống kê"},
+        {"Nhân viên", "Danh sách nhân viên", "Tìm kiếm"},
+        {"Công nhân", "Danh sách công nhân", "Tìm kiếm" ,"Phân công"},
+        {"Sản phẩm", "Danh sách sản phẩm", "Tìm kiếm", "Quản lý công đoạn"},
+        {"Phòng Ban", "Danh sách phòng ban", "Tìm kiếm"},
+        {"Bảng lương", "Công nhân", "Nhân viên", "Thống kê"},
         {"Bảng chấm công", "Chấm công công nhân", "Chấm công nhân viên"},
         {"Tài khoản", "Thông tin tài khoản", "Quản lý tài khoản", "Đổi mật khẩu"}
     };
