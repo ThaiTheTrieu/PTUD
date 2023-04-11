@@ -12,7 +12,7 @@ import java.util.List;
  */
 public class test {
     static departmentDao depDao = new departmentDao();
-    static Connection con = new DBConnection().getInstance().getCon();
+    static Connection con = DBConnection.getInstance().getCon();
     public static void main(String[] args) throws Exception {
 //        System.out.println(depDao.getdepartmentByID("p01"));
         List<Phongban> list = depDao.getListOfDepartment();

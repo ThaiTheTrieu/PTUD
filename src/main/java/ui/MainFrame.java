@@ -17,6 +17,7 @@ public class MainFrame extends javax.swing.JFrame {
                 tbdMenu.setSelectedIndex(1);
             }
         });
+        setResizable(false);
     }
 
     /**
@@ -31,7 +32,7 @@ public class MainFrame extends javax.swing.JFrame {
         scroll = new scrollpanel.ScrollPaneWin11();
         pnlMenu = new ui.Menu();
         tbdMenu = new javax.swing.JTabbedPane();
-        pnlEmployee = new ui.EmployeeUI();
+        employeeUI1 = new ui.EmployeeUI();
         congNhanUI1 = new ui.CongNhanUI();
         departmentUI1 = new ui.DepartmentUI();
 
@@ -42,7 +43,7 @@ public class MainFrame extends javax.swing.JFrame {
 
         getContentPane().add(scroll, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 220, 700));
 
-        tbdMenu.addTab("tab1", pnlEmployee);
+        tbdMenu.addTab("tab1", employeeUI1);
         tbdMenu.addTab("tab2", congNhanUI1);
         tbdMenu.addTab("tab3", departmentUI1);
 
@@ -88,7 +89,7 @@ public class MainFrame extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private ui.CongNhanUI congNhanUI1;
     private ui.DepartmentUI departmentUI1;
-    private ui.EmployeeUI pnlEmployee;
+    private ui.EmployeeUI employeeUI1;
     private ui.Menu pnlMenu;
     private scrollpanel.ScrollPaneWin11 scroll;
     private javax.swing.JTabbedPane tbdMenu;

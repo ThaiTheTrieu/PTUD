@@ -29,12 +29,19 @@ public class DBConnection {
         return con;
     }
 
-    public static DBConnection getInstance() {
+    public synchronized static DBConnection getInstance() {
         if(instance==null)
             instance = new DBConnection();
         return instance;
     }
     
+    public void close() {
+		try {
+			con.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
     
     
 }

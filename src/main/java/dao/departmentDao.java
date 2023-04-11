@@ -30,17 +30,17 @@ public class departmentDao {
         return null;
     }
 
-    public ArrayList<Phongban> getListOfDepartment() throws SQLException {
-//        List list = new ArrayList();
-//        String sql = "select * from PhongBan";
-////      PreparedStatement stmt = con.prepareStatement(sql);
-//        ResultSet rs = stmt.executeQuery();
-//        while (rs.next()) {
-//            Phongban p = new Phongban(rs.getString("maPB"), rs.getString("tenPB"), rs.getString("soDienThoaiPB"));
-//            list.add(p);
-//        }
-//        return list;
-        return new ArrayList<Phongban>();
+    public List<Phongban> getListOfDepartment() throws SQLException {
+        List<Phongban> list = new ArrayList<Phongban>();
+        System.out.println("connection: " +con);
+        String sql = "select * from PhongBan";
+        PreparedStatement stmt = con.prepareStatement(sql);
+        ResultSet rs = stmt.executeQuery();
+        while (rs.next()) {
+            Phongban p = new Phongban(rs.getString("maPB"), rs.getString("tenPB"), rs.getString("soDienThoaiPB"));
+            list.add(p);
+        }
+        return list;
     }
 
     public boolean updateDepartment(String id, String name, String phone) throws Exception {
