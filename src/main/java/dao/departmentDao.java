@@ -32,14 +32,14 @@ public class departmentDao {
 
     public List<Phongban> getListOfDepartment() throws SQLException {
         List<Phongban> list = new ArrayList<Phongban>();
-        System.out.println("connection: " +con);
-        String sql = "select * from PhongBan";
-        PreparedStatement stmt = con.prepareStatement(sql);
-        ResultSet rs = stmt.executeQuery();
-        while (rs.next()) {
-            Phongban p = new Phongban(rs.getString("maPB"), rs.getString("tenPB"), rs.getString("soDienThoaiPB"));
-            list.add(p);
-        }
+//        System.out.println("connection: " +con);
+//        String sql = "select * from PhongBan";
+//        PreparedStatement stmt = con.prepareStatement(sql);
+//        ResultSet rs = stmt.executeQuery();
+//        while (rs.next()) {
+//            Phongban p = new Phongban(rs.getString("maPB"), rs.getString("tenPB"), rs.getString("soDienThoaiPB"));
+//            list.add(p);
+//        }
         return list;
     }
 

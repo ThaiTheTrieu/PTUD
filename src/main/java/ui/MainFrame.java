@@ -16,6 +16,12 @@ public class MainFrame extends javax.swing.JFrame {
             if(index == 2 && subintex == 1){
                 tbdMenu.setSelectedIndex(1);
             }
+            if(index == 1 && subintex == 2){
+                tbdMenu.setSelectedIndex(3);
+            }
+            if(index == 2 && subintex == 2){
+                tbdMenu.setSelectedIndex(4);
+            }
         });
         setResizable(false);
     }
@@ -32,9 +38,11 @@ public class MainFrame extends javax.swing.JFrame {
         scroll = new scrollpanel.ScrollPaneWin11();
         pnlMenu = new ui.Menu();
         tbdMenu = new javax.swing.JTabbedPane();
-        employeeUI1 = new ui.EmployeeUI();
+        employeeUI2 = new ui.EmployeeUI();
         congNhanUI1 = new ui.CongNhanUI();
         departmentUI1 = new ui.DepartmentUI();
+        timKiemNhanVien1 = new ui.TimKiemNhanVien();
+        timKiemCongNhan1 = new ui.TimKiemCongNhan();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -43,9 +51,12 @@ public class MainFrame extends javax.swing.JFrame {
 
         getContentPane().add(scroll, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 220, 700));
 
-        tbdMenu.addTab("tab1", employeeUI1);
+        employeeUI2.setPreferredSize(new java.awt.Dimension(1000, 699));
+        tbdMenu.addTab("tab3", employeeUI2);
         tbdMenu.addTab("tab2", congNhanUI1);
         tbdMenu.addTab("tab3", departmentUI1);
+        tbdMenu.addTab("tab4", timKiemNhanVien1);
+        tbdMenu.addTab("tab5", timKiemCongNhan1);
 
         getContentPane().add(tbdMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, -30, 1080, 730));
 
@@ -89,9 +100,11 @@ public class MainFrame extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private ui.CongNhanUI congNhanUI1;
     private ui.DepartmentUI departmentUI1;
-    private ui.EmployeeUI employeeUI1;
+    private ui.EmployeeUI employeeUI2;
     private ui.Menu pnlMenu;
     private scrollpanel.ScrollPaneWin11 scroll;
     private javax.swing.JTabbedPane tbdMenu;
+    private ui.TimKiemCongNhan timKiemCongNhan1;
+    private ui.TimKiemNhanVien timKiemNhanVien1;
     // End of variables declaration//GEN-END:variables
 }
