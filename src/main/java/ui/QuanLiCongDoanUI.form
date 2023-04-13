@@ -149,7 +149,7 @@
                       <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
                               <Group type="102" attributes="0">
-                                  <Component id="lblSoLuongCongDoan" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblDiaChiCN" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Component id="txtSoLuongCD" max="32767" attributes="0"/>
                               </Group>
@@ -179,7 +179,7 @@
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="txtTenSP" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="lblTenSP" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="lblSoLuongCongDoan" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblDiaChiCN" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="txtSoLuongCD" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace pref="20" max="32767" attributes="0"/>
@@ -196,7 +196,7 @@
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JLabel" name="lblSoLuongCongDoan">
+        <Component class="javax.swing.JLabel" name="lblDiaChiCN">
           <Properties>
             <Property name="text" type="java.lang.String" value="S&#x1ed1; l&#x1b0;&#x1ee3;ng c&#xf4;ng &#x111;o&#x1ea1;n:"/>
           </Properties>

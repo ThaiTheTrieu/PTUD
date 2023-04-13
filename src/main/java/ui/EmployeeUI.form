@@ -102,22 +102,14 @@
                           <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="92" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" attributes="0">
-                                  <EmptySpace min="-2" pref="74" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="lblNgaySinhCN" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="lblDiaChiNV" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="lblPhongBan" alignment="0" min="-2" pref="63" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="1" attributes="0">
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="lblSoDTNV" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                              </Group>
+                              <Component id="lblNgaySinhCN" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblSoDTNV" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblDiaChiNV" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblPhongBan" min="-2" pref="63" max="-2" attributes="0"/>
                           </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
                                   <Component id="txtDiaChiNV" alignment="0" max="32767" attributes="0"/>
@@ -131,7 +123,7 @@
                                   </Group>
                               </Group>
                           </Group>
-                          <EmptySpace pref="103" max="32767" attributes="0"/>
+                          <EmptySpace pref="92" max="32767" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="btnTimKiem" alignment="0" min="-2" pref="91" max="-2" attributes="0"/>
                               <Group type="102" alignment="0" attributes="0">
@@ -150,7 +142,7 @@
                                   </Group>
                               </Group>
                           </Group>
-                          <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
@@ -162,20 +154,22 @@
                   <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="lblNgaySinhCN" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="dateNgaySinhNV" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="dateNgaySinhNV" max="32767" attributes="0"/>
+                              <Component id="lblNgaySinhCN" max="32767" attributes="0"/>
                           </Group>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="txtDiaChiNV" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="lblSoDTNV" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="lblDiaChiNV" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="txtSoDTNV" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="lblPhongBan" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <Group type="103" groupAlignment="3" attributes="0">
@@ -187,17 +181,16 @@
                               <Component id="txtTenNV" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="lblTenNV" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="lblCCCDNV" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="txtCCCDCN" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="lblGioiTinhNV" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="radNamCN" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="radNuCN" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="lblPhongBan" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="cbbPhongBan" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
@@ -206,19 +199,19 @@
                               <Component id="lblHeSoLuongNV" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="txtHeSoLuongNV" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="lblChucVuNV" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="cbbChucVuNV" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="lblTrangThaiNV" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="cbbTrangThaiNV" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
-                  <EmptySpace pref="25" max="32767" attributes="0"/>
+                  <EmptySpace pref="33" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="btnThem" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="btnCapNhat" alignment="3" min="-2" max="-2" attributes="0"/>

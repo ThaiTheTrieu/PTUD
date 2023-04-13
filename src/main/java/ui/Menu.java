@@ -22,7 +22,7 @@ public class Menu extends JComponent {
         {"Nhân viên", "Danh sách nhân viên", "Tìm kiếm"},
         {"Công nhân", "Danh sách công nhân", "Tìm kiếm" ,"Phân công"},
         {"Sản phẩm", "Danh sách sản phẩm", "Tìm kiếm", "Quản lý công đoạn"},
-        {"Phòng Ban", "Danh sách phòng ban", "Tìm kiếm"},
+        {"Đơn vị quản lí", "Danh sách phòng ban", "Tìm kiếm phòng ban","Danh sách tổ sản xuất","Tìm kiếm tổ sản xuất"},
         {"Bảng lương", "Công nhân", "Nhân viên", "Thống kê"},
         {"Bảng chấm công", "Chấm công công nhân", "Chấm công nhân viên"},
         {"Tài khoản", "Thông tin tài khoản", "Quản lý tài khoản", "Đổi mật khẩu"}

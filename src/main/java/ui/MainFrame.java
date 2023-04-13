@@ -28,6 +28,9 @@ public class MainFrame extends javax.swing.JFrame {
             if(index == 3 && subintex == 2){
                 tbdMenu.setSelectedIndex(6);
             }
+            if(index == 4 && subintex == 2){
+                tbdMenu.setSelectedIndex(7);
+            }
         });
         setResizable(false);
     }
@@ -51,6 +54,7 @@ public class MainFrame extends javax.swing.JFrame {
         departmentUI1 = new ui.DepartmentUI();
         sanPhamUI1 = new ui.SanPhamUI();
         timKiemSanPham1 = new ui.TimKiemSanPham();
+        timKiemPhonggBan1 = new ui.TimKiemPhonggBan();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -67,6 +71,7 @@ public class MainFrame extends javax.swing.JFrame {
         tbdMenu.addTab("tab3", departmentUI1);
         tbdMenu.addTab("tab6", sanPhamUI1);
         tbdMenu.addTab("tab7", timKiemSanPham1);
+        tbdMenu.addTab("tab8", timKiemPhonggBan1);
 
         getContentPane().add(tbdMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, -30, 1080, 730));
 
@@ -117,6 +122,7 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JTabbedPane tbdMenu;
     private ui.TimKiemCongNhan timKiemCongNhan1;
     private ui.TimKiemNhanVien timKiemNhanVien1;
+    private ui.TimKiemPhonggBan timKiemPhonggBan1;
     private ui.TimKiemSanPham timKiemSanPham1;
     // End of variables declaration//GEN-END:variables
 }

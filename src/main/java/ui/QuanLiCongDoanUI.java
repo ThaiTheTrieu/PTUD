@@ -8,12 +8,12 @@ package ui;
  *
  * @author Admin
  */
-public class SanPhamUI extends javax.swing.JPanel {
+public class QuanLiCongDoanUI extends javax.swing.JPanel {
 
     /**
      * Creates new form CongNhanUI
      */
-    public SanPhamUI() {
+    public QuanLiCongDoanUI() {
         initComponents();
     }
 
@@ -29,7 +29,7 @@ public class SanPhamUI extends javax.swing.JPanel {
         scroll = new scrollpanel.ScrollPaneWin11();
         tbSanPham = new javax.swing.JTable();
         jPanel1 = new javax.swing.JPanel();
-        lblSoLuongCongDoan = new javax.swing.JLabel();
+        lblDiaChiCN = new javax.swing.JLabel();
         txtSoLuongCD = new javax.swing.JTextField();
         txtSoLuongSP = new javax.swing.JTextField();
         txtTenSP = new javax.swing.JTextField();
@@ -123,7 +123,7 @@ public class SanPhamUI extends javax.swing.JPanel {
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("Thông tin sản phẩm"));
         jPanel1.setPreferredSize(new java.awt.Dimension(945, 245));
 
-        lblSoLuongCongDoan.setText("Số lượng công đoạn:");
+        lblDiaChiCN.setText("Số lượng công đoạn:");
 
         txtSoLuongCD.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -236,7 +236,7 @@ public class SanPhamUI extends javax.swing.JPanel {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(lblSoLuongCongDoan)
+                                .addComponent(lblDiaChiCN)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(txtSoLuongCD))
                             .addGroup(jPanel1Layout.createSequentialGroup()
@@ -258,7 +258,7 @@ public class SanPhamUI extends javax.swing.JPanel {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtTenSP, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblTenSP)
-                    .addComponent(lblSoLuongCongDoan)
+                    .addComponent(lblDiaChiCN)
                     .addComponent(txtSoLuongCD, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 20, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -336,8 +336,8 @@ public class SanPhamUI extends javax.swing.JPanel {
     private javax.swing.JButton btnTimKiem;
     private javax.swing.JButton btnXoa;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel lblDiaChiCN;
     private javax.swing.JLabel lblMaSP;
-    private javax.swing.JLabel lblSoLuongCongDoan;
     private javax.swing.JLabel lblSoLuongSP;
     private javax.swing.JLabel lblTenSP;
     private scrollpanel.ScrollPaneWin11 scroll;

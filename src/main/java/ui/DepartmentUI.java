@@ -42,7 +42,6 @@ public class DepartmentUI extends javax.swing.JPanel {
         btnUpdate = new javax.swing.JButton();
         btnDelete = new javax.swing.JButton();
         btnCanel = new javax.swing.JButton();
-        txtSearch = new javax.swing.JTextField();
         btnSearch = new javax.swing.JButton();
         lblDepartmentId = new java.awt.Label();
         txtDepId = new javax.swing.JTextField();
@@ -132,7 +131,9 @@ public class DepartmentUI extends javax.swing.JPanel {
             }
         });
 
+        btnSearch.setBackground(new java.awt.Color(51, 153, 255));
         btnSearch.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        btnSearch.setForeground(new java.awt.Color(255, 255, 255));
         btnSearch.setText("Tìm");
         btnSearch.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -140,7 +141,6 @@ public class DepartmentUI extends javax.swing.JPanel {
             }
         });
 
-        lblDepartmentId.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         lblDepartmentId.setText("Mã Phòng ban:");
 
         txtDepId.addActionListener(new java.awt.event.ActionListener() {
@@ -149,13 +149,10 @@ public class DepartmentUI extends javax.swing.JPanel {
             }
         });
 
-        lblDepName.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         lblDepName.setText("Tên Phòng ban:");
 
-        lblDepPhone.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         lblDepPhone.setText("Số điện thoại:");
 
-        lblDepPhone1.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         lblDepPhone1.setText("Số lượng nhân viên:");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -195,11 +192,9 @@ public class DepartmentUI extends javax.swing.JPanel {
                             .addComponent(lblDepPhone1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(txtDepPhone1, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(76, 76, 76)
+                .addGap(95, 95, 95)
                 .addComponent(btnSearch, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(txtSearch, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(54, 54, 54))
+                .addGap(198, 198, 198))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -207,12 +202,12 @@ public class DepartmentUI extends javax.swing.JPanel {
                 .addGap(24, 24, 24)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(lblDepartmentId, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(btnSearch)
-                            .addComponent(txtSearch, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addComponent(txtDepPhone, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(lblDepPhone, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(lblDepPhone, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(jPanel2Layout.createSequentialGroup()
+                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(lblDepartmentId, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtDepPhone, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGap(1, 1, 1)))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(txtDepId, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(3, 3, 3)))
@@ -227,7 +222,8 @@ public class DepartmentUI extends javax.swing.JPanel {
                     .addComponent(btnUpdate)
                     .addComponent(btnDelete)
                     .addComponent(btnCanel)
-                    .addComponent(btnAdd))
+                    .addComponent(btnAdd)
+                    .addComponent(btnSearch))
                 .addContainerGap())
         );
 
@@ -386,6 +382,5 @@ public class DepartmentUI extends javax.swing.JPanel {
     private javax.swing.JTextField txtDepName;
     private javax.swing.JTextField txtDepPhone;
     private javax.swing.JTextField txtDepPhone1;
-    private javax.swing.JTextField txtSearch;
     // End of variables declaration//GEN-END:variables
 }
